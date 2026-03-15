@@ -6,7 +6,7 @@ import { TestimonialGrid } from "./TestimonialGrid";
 
 export function ClientStories() {
   return (
-    <section className="flex-center bg-brand-secondary px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="flex-center bg-brand-secondary px-[5%] py-16 text-white md:py-24 lg:py-28">
       <div className="container">
         <div className="mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
           <SectionHeader

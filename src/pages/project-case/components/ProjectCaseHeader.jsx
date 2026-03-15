@@ -14,21 +14,21 @@ export function ProjectCaseHeader() {
             description="  Transforming complex challenges into elegant software experiences
             for businesses across Nigeria, Africa and Worldwide."
             whiteTexts={true}
-            className="max-w-[658px] text-white"
+            className="text-brand-secondary max-w-[658px]"
           />
           <div className="mt-5 flex flex-wrap justify-center gap-2 md:mt-6">
             <Badge className="bg-brand-shade-dark hover:bg-brand-secondary rounded-full px-3 py-1.5 transition-all duration-500">
-              <Link to="#" className="text-brand-main text-base">
+              <Link to="#" className="text-brand-secondary text-base">
                 Web development
               </Link>
             </Badge>
             <Badge className="bg-brand-shade-dark hover:bg-brand-secondary rounded-full px-3 py-1.5">
-              <Link to="#" className="text-brand-main text-base">
+              <Link to="#" className="text-brand-secondary text-base">
                 Mobile apps
               </Link>
             </Badge>
             <Badge className="bg-brand-shade-dark hover:bg-brand-secondary rounded-full px-3 py-1.5">
-              <Link to="#" className="text-brand-main text-base">
+              <Link to="#" className="text-brand-secondary text-base">
                 UI/UX design
               </Link>
             </Badge>

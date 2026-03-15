@@ -1,115 +1,219 @@
-# Codefloxx -Marketing Website
+# Almanāb Technologies — Company Website
 
-A modern, responsive marketing website for Codefloxx -a software company focused on web & mobile solutions. Built with React, Vite and TailwindCSS, this repo provides a production-ready front-end template with reusable UI primitives and page sections.
+> Software architecture studio based in Nigeria, building scalable web applications, mobile apps, and SaaS platforms for ambitious founders worldwide.
 
-Key files and components
+**Live site:** [almanab.tech](https://www.almanab.tech)
+**Instagram:** [@almanab.tech](https://www.instagram.com/almanab.tech)
 
-- Entry & routing
-  - [`src/main.jsx`](src/main.jsx) -app bootstrap
-  - [`src/App.jsx`](src/App.jsx) -React Router setup and layout
-  - [`src/pages/home/index.jsx`](src/pages/home/index.jsx) -homepage composition
-- Reusable UI & layout
-  - [`Navbar`](src/components/Navbar.jsx)
-  - [`Footer`](src/components/Footer.jsx)
-  - [`SectionHeader`](src/components/SectionHeader.jsx)
-  - UI primitives under [`src/components/ui`](src/components/ui)
-- Utilities & hooks
-  - [`cn`](src/lib/utils.js) -className merge helper
-  - [`useMediaQuery`](src/hooks/use-media-query.js)
+---
 
-Technologies
+## Tech Stack
 
-- React (v19)
-- Vite
-- TailwindCSS
-- Radix primitives for accessible UI
-- Framer Motion for micro-interactions
-- React Router for routing
+| Layer         | Technology                          |
+| ------------- | ----------------------------------- |
+| Framework     | React + Vite                        |
+| Routing       | React Router DOM                    |
+| Styling       | Tailwind CSS v4                     |
+| UI Components | shadcn/ui                           |
+| Animations    | Framer Motion                       |
+| Data Fetching | TanStack Query                      |
+| Icons         | Lucide React + React Icons          |
+| Analytics     | Google Analytics 4 (`G-ZFE927JD19`) |
 
-Features
+---
 
-- Composable, section-driven homepage: hero, features, process, portfolio, testimonials, FAQ, contact.
-- Reusable UI primitives (Button, Card, Input, Tabs, etc.) in `src/components/ui`.
-- Responsive navigation with mobile drawer & dropdowns (`Navbar`).
-- Tailwind + utility helpers (`cn`) for consistent styling.
-- Data-driven sections using `src/constants` for projects, testimonials, and FAQ.
+## Project Structure
 
-Getting started
-
-1. Install dependencies
-
-```sh
-npm install
+```
+almanab-tech/
+├── public/
+│   ├── almanab.svg          # Logo
+│   ├── og-image.png         # Social share image (1200×630)
+│   ├── robots.txt           # Crawler rules
+│   └── sitemap.xml          # Pages sitemap
+├── src/
+│   ├── components/
+│   │   ├── ui/              # shadcn/ui base components
+│   │   ├── Navbar.tsx       # Site navigation
+│   │   ├── HeroSection.tsx  # Home page hero
+│   │   ├── ReasonsTab.tsx   # "Why Almanāb" tab content
+│   │   └── WhyChooseUs.tsx  # "Why Almanāb" section wrapper
+│   ├── hooks/
+│   │   └── use-media-query.ts
+│   ├── lib/
+│   │   └── axios.ts         # Centralized Axios instance
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── Services.tsx
+│   │   ├── ProjectCases.tsx
+│   │   ├── AboutUs.tsx
+│   │   └── Contact.tsx
+│   ├── index.css            # Global styles + brand tokens
+│   └── main.jsx             # App entry point
+└── index.html               # Document head / SEO meta
 ```
 
-2. Development server
+---
 
-```sh
+## Brand
+
+| Token          | Value     | Usage                      |
+| -------------- | --------- | -------------------------- |
+| `--gold`       | `#d3af30` | Primary accent, CTAs, logo |
+| `--dark`       | `#222222` | Brand dark / foreground    |
+| `--white`      | `#ffffff` | Light surfaces             |
+| `--light-gray` | `#f9f9f9` | Subtle backgrounds         |
+
+Fonts: **Syne** (headings) · **JetBrains Mono** (labels, code, nav) · **DM Sans** (body)
+
+The full token system lives in `src/index.css`. All shadcn/ui semantic tokens (`--primary`, `--accent`, `--ring`, etc.) are mapped to the brand palette — no component needs raw hex values.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or pnpm
+
+### Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/almanab-tech.git
+cd almanab-tech
+
+# Install dependencies
+npm install
+
+# Start dev server
 npm run dev
 ```
 
-Opens locally and watches for changes. The app root is served from [`index.html`](index.html) which mounts [`src/main.jsx`](src/main.jsx).
+The site runs at `http://localhost:5173` by default.
 
-Build & preview
+### Build for production
 
-- Build for production:
-
-```sh
+```bash
 npm run build
 ```
 
-- Preview the production build:
+Output goes to `dist/`. Deploy the contents of `dist/` to your hosting provider.
 
-```sh
+### Preview production build locally
+
+```bash
 npm run preview
 ```
 
-Scripts (see [package.json](package.json))
+---
 
-- dev -vite development server
-- build -production build
-- preview -serve built files locally
-- lint -run ESLint
+## Environment
 
-Configuration
+No `.env` file is required for the base site. If you add backend integrations (contact form, CMS, etc.), create a `.env` file at the root:
 
-- Vite config: [vite.config.js](vite.config.js)
-- Tailwind config: [tailwind.config.js](tailwind.config.js)
-- Path aliases are defined in [jsconfig.json](jsconfig.json) and used across the app (e.g. `@/components`, `@/lib`).
+```env
+VITE_API_BASE_URL=https://api.almanab.tech
+```
 
-Project structure (important folders)
+All Vite env variables must be prefixed with `VITE_` to be accessible in the browser.
 
-- src/
-  - components/ -global components (Navbar, Footer, SectionHeader)
-  - components/ui/ -design primitives (Button, Card, Input, Tabs, etc.)
-  - pages/home/ -homepage and its sections (`HeroSection`, `WhyChooseUs`, `Portfolio`, ...)
-  - constants/ -static data (projects, testimonials, faq)
-  - hooks/ -small custom hooks (e.g. `use-media-query`)
-  - lib/ -helpers (`cn`)
+---
 
-Extending the site
+## SEO Checklist
 
-- Add new pages under `src/pages/` and wire them into routing in [`src/App.jsx`](src/App.jsx).
-- Add or update UI primitives in `src/components/ui` to keep design consistent.
-- Update static content/data in `src/constants` to change project/testimonial/FAQ lists.
+- [x] Updated `<title>` and `<meta name="description">` for Almanāb Technologies
+- [x] Canonical URL set to `https://www.almanab.tech/`
+- [x] Open Graph tags with correct image, title, and description
+- [x] Twitter/X card meta tags
+- [x] JSON-LD structured data — `Organization` + `WebSite` schemas
+- [x] `robots.txt` allowing full indexing
+- [x] `sitemap.xml` listing all pages
+- [x] Google Analytics 4 connected
+- [ ] Submit sitemap in Google Search Console
+- [ ] Set up 301 redirect from `codefloxx.com` → `almanab.tech`
+- [ ] Create `og-image.png` (1200×630px) for social previews
+- [ ] Add per-page `<title>` and `<meta description>` via react-helmet-async
 
-Design tokens & styles
+---
 
-- Global tokens and theme variables are in `src/index.css`.
-- Components rely on Tailwind utility classes and CSS variables (dark mode supported via `.dark`).
+## Pages & Routes
 
-Contributing
+| Route            | Page            | Description                          |
+| ---------------- | --------------- | ------------------------------------ |
+| `/`              | Home            | Hero, Why Almanāb, services overview |
+| `/services`      | Services        | Full services listing                |
+| `/project-cases` | Project Cases   | Portfolio / case studies             |
+| `/about-us`      | About Us        | Company story, team                  |
+| `/contact`       | Contact & Quote | Enquiry form                         |
 
-- Follow consistent commit messages.
-- Linting: `npm run lint`
-- Keep UI primitives generic & composable; prefer data-driven page sections.
+---
 
-License & contact
+## Key Components
 
-- Add your LICENSE file or change this section to reflect your licensing.
-- For questions about this repo contact the maintainers or the Codefloxx team.
+### `Navbar.tsx`
 
-Notes
+Fixed top navigation with a 2px gold top bar. Supports a desktop hover dropdown for the About section and a fully animated mobile menu. Closes on outside click.
 
-- The project uses Radix primitives and shadcn-style components for accessibility.
-- If adding TypeScript, update ESLint config and types in
+### `HeroSection.tsx`
+
+Full-screen dark hero with staggered Framer Motion reveals. Features a three-weight typographic headline, a vertical scrolling tech-stack marquee, and a metrics bar at the bottom. Requires `Syne` and `JetBrains Mono` fonts.
+
+### `WhyChooseUs.tsx` + `ReasonsTab.tsx`
+
+Tabbed section explaining the company's value proposition across three pillars: Scalability, Performance, and Innovation. Each tab shows a headline, body copy, and three supporting metrics. No images — the right column is purely data-driven.
+
+### `index.css`
+
+Full brand token system. Includes:
+
+- Raw tokens: `--gold`, `--dark`, `--white`, `--light-gray`
+- Mapped shadcn/ui tokens: `--primary`, `--accent`, `--ring`, `--border`, etc.
+- Light and dark mode variants
+- Sidebar tokens for dashboard layouts
+
+---
+
+## Rebranding Notes
+
+This project was originally built under the name **Codefloxx**. It has been fully rebranded to **Almanāb Technologies**. If you find any remaining references to "Codefloxx" in the codebase, replace them with "Almanāb Technologies" or "Almanab Tech".
+
+Key places to check:
+
+- `index.html` — all meta tags (already updated)
+- `src/` — any hardcoded strings, comments, or console logs
+- Image alt text and aria labels
+- Any analytics event names sent to GA4
+
+---
+
+## Deployment
+
+The site is a standard Vite SPA. It can be deployed to:
+
+- **Vercel** — connect the GitHub repo, zero config needed
+- **Netlify** — drag and drop the `dist/` folder or connect via Git
+- **Cloudflare Pages** — set build command to `npm run build`, output to `dist`
+
+For any host, add a redirect rule so all routes fall back to `index.html` (required for client-side routing):
+
+**Netlify (`public/_redirects`):**
+
+```
+/*  /index.html  200
+```
+
+**Vercel (`vercel.json`):**
+
+```json
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
+```
+
+---
+
+## License
+
+Private — © 2026 Almanāb Technologies. All rights reserved.

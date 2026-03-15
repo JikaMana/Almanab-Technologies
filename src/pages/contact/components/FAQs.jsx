@@ -41,7 +41,7 @@ export function FAQs() {
               id: "1",
               question: "How long does a typical project take?",
               answer:
-                "Project duration varies depending on complexity. A basic website might take 2-4 weeks, while complex web applications can range from 3-6 months.",
+                "Project duration varies depending on complexity. A basic website might take 1-6 weeks, while complex web applications can range from 3-6 months.",
             },
             {
               id: "2",
@@ -97,7 +97,7 @@ export function FAQs() {
           <div className="mt-6">
             <Button
               title="Contact Us"
-              className="mx-auto h-12 w-full rounded-xl bg-teal-600 px-8 font-bold text-white hover:bg-teal-700"
+              className="bg-brand-main hover:bg-brand-main/90 mx-auto h-12 w-full cursor-pointer rounded-xl px-8 font-bold text-white"
             >
               Contact Us
             </Button>

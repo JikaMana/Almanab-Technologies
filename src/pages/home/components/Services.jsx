@@ -6,7 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export function Services() {
   return (
-    <section className="flex-center bg-brand-secondary px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="flex-center bg-dark text-gold px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="flex flex-col items-center">
           <div className="mb-12 text-center md:mb-18 lg:mb-20">
@@ -14,20 +14,19 @@ export function Services() {
               tagline="Services"
               title="Our digital solutions"
               description="Comprehensive software development services."
-              showCta={false}
             />
           </div>
 
           <Tabs
             defaultValue="web-development"
-            className="w-full overflow-hidden rounded-2xl border-3 border-black"
+            className="border-gold w-full overflow-hidden rounded-2xl border-3"
           >
-            <TabsList className="flex w-full flex-wrap items-stretch bg-transparent p-0">
+            <TabsList className="w-full1 flex items-stretch bg-transparent p-0">
               {serviceTabsData.map((tab) => (
                 <TabsTrigger
                   key={tab.value}
                   value={tab.value}
-                  className="group relative flex flex-1 cursor-pointer items-center justify-center border-1 border-t-0 border-b-2 border-black bg-transparent px-1 py-6 text-xs font-medium text-black shadow-none transition-all duration-200 focus-visible:ring-0 focus-visible:ring-offset-0 data-[state=active]:border-0 data-[state=active]:bg-transparent data-[state=active]:text-black data-[state=active]:shadow-none sm:px-3 sm:text-sm sm:font-semibold md:px-5 md:py-8 md:text-base lg:py-12 lg:text-lg"
+                  className="group text-gold border-gold relative flex flex-1 cursor-pointer items-center justify-center border-1 border-t-0 border-b-2 bg-transparent px-1 py-6 text-xs font-medium shadow-none transition-all duration-200 focus-visible:ring-0 focus-visible:ring-offset-0 data-[state=active]:border-0 data-[state=active]:bg-transparent data-[state=active]:text-white data-[state=active]:shadow-none sm:px-3 sm:text-sm sm:font-semibold md:px-5 md:py-8 md:text-base lg:py-12 lg:text-lg"
                 >
                   {tab.label}
                 </TabsTrigger>
@@ -55,11 +54,11 @@ export function Services() {
                         that transform businesses.
                       </p>
 
-                      <div className="mt-6 flex gap-x-4 md:mt-8">
+                      {/* <div className="mt-6 flex gap-x-4 md:mt-8">
                         <Button
                           title="Contact"
                           size="lg"
-                          className="hover:bg-brand-main h-auto w-max cursor-pointer rounded-full bg-transparent px-5 py-2.5 text-lg font-medium text-black shadow-none outline-2 outline-gray-600 hover:text-white"
+                          className="hover:bg-gold text-gold h-auto w-max cursor-pointer rounded-full bg-transparent px-5 py-2.5 text-lg font-medium shadow-none outline-2 hover:text-white"
                         >
                           Learn more
                         </Button>
@@ -73,7 +72,7 @@ export function Services() {
                           <span>Explore</span>
                           <RxChevronRight className="h-4 w-4" />
                         </Button>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
 

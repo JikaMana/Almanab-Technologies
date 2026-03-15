@@ -1,71 +1,92 @@
+"use client";
+
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { RxChevronRight } from "react-icons/rx";
 
 const tabHeaders = [
-  {
-    value: "tab-one",
-    label: "Scalability",
-  },
-  {
-    value: "tab-two",
-    label: "Performance",
-  },
-  {
-    value: "tab-three",
-    label: "Innovation",
-  },
+  { value: "tab-one", label: "Scalability" },
+  { value: "tab-two", label: "Performance" },
+  { value: "tab-three", label: "Innovation" },
 ];
 
 const tabContentData = [
   {
     value: "tab-one",
-    tagline: "Reliability",
-    title: "Scalable Architecture",
+    number: "01",
+    title: "Architecture that grows with your business",
     description:
-      "We design systems that grow with your business, ensuring long-term performance and adaptability.",
-    imageSrc:
-      "https://res.cloudinary.com/deid1vy94/image/upload/v1759105730/scalable-architecture_mmifg1.avif",
-    imageAlt: "Illustration representing Scalability",
-    primaryCta: { title: "Details", variant: "outline" },
-    secondaryCta: { title: "Learn more", variant: "link" },
+      "We design systems with headroom — not just for where you are today, but for 10× the load, new markets, and product pivots you haven't planned yet. Clean abstractions, modular services, and sensible defaults that prevent future rewrites.",
+    cta: "Explore our approach",
+    stats: [
+      {
+        value: "99.98%",
+        label: "Average uptime across production systems we maintain",
+      },
+      {
+        value: "40ms",
+        label: "Median API response time on optimized deployments",
+      },
+      {
+        value: "Zero",
+        label: "Surprise rewrites. We design it right the first time.",
+      },
+    ],
   },
   {
     value: "tab-two",
-    tagline: "Speed & Efficiency",
-    title: "Optimized Performance",
+    number: "02",
+    title: "Speed is a feature, not an afterthought",
     description:
-      "Our focus on modern frameworks, clean code, and cloud optimization delivers lightning-fast, high-performing applications with minimal latency and superior user experience.",
-    imageSrc:
-      "https://res.cloudinary.com/deid1vy94/image/upload/v1759105727/photo-1717444308827-d0f206a4de1e_mcx1k3.avif",
-    imageAlt: "Illustration representing Performance",
-    primaryCta: { title: "Details", variant: "outline" },
-    secondaryCta: { title: "Learn more", variant: "link" },
+      "Slow software costs you users. We instrument and profile from day one — optimizing renders, reducing bundle sizes, indexing databases properly, and choosing the right infrastructure for your workload before it becomes a crisis.",
+    cta: "See our process",
+    stats: [
+      {
+        value: "< 1.2s",
+        label: "Largest Contentful Paint target on all web deliverables",
+      },
+      {
+        value: "3×",
+        label: "Typical performance gain after our optimization audits",
+      },
+      {
+        value: "100",
+        label: "Lighthouse scores we consistently achieve for core pages",
+      },
+    ],
   },
   {
     value: "tab-three",
-    tagline: "Future-Proofing",
-    title: "Continuous Innovation",
+    number: "03",
+    title: "Modern stack, pragmatic choices",
     description:
-      "We integrate the latest technologies, AI/ML tools, and design patterns to ensure your platform remains cutting-edge, keeping your business ahead of the competition.",
-    imageSrc:
-      "https://res.cloudinary.com/deid1vy94/image/upload/v1759145004/codefloxx-innovation_fzix9a.webp",
-    imageAlt: "Illustration representing Innovation",
-    primaryCta: { title: "Details", variant: "outline" },
-    secondaryCta: { title: "Learn more", variant: "link" },
+      "We keep up with what matters — AI integrations, edge runtimes, new frameworks — but we only adopt what genuinely solves your problem. No hype-driven rewrites. Just sound decisions that keep your codebase clean and your team moving fast.",
+    cta: "View case studies",
+    stats: [
+      {
+        value: "50+",
+        label: "Projects shipped across SaaS, fintech, and e-commerce",
+      },
+      {
+        value: "AI-ready",
+        label: "Every product is designed to integrate AI tooling from day one",
+      },
+      {
+        value: "2-week",
+        label: "Sprint cycles with demos, feedback loops, and clear milestones",
+      },
+    ],
   },
 ];
 
 export const ReasonsTabHeader = () => {
   return (
-    <TabsList className="relative mb-12 flex w-screen flex-nowrap items-center gap-x-6 overflow-hidden overflow-x-auto bg-transparent px-[5vw] md:mb-16 md:w-auto md:max-w-full md:px-0">
+    <TabsList className="border-border mb-10 flex w-full items-end gap-0 rounded-none border-b bg-transparent p-0">
       {tabHeaders.map((header) => (
         <TabsTrigger
           key={header.value}
           value={header.value}
-          className="text-muted-foreground data-[state=active]:text-foreground data-[state=active]:border-brand-shade-dark w-full rounded-none border-0 border-t-4 bg-transparent px-0 data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=inactive]:border-transparent md:py-2"
+          className="text-muted-foreground data-[state=active]:border-foreground data-[state=active]:text-foreground mx-auto w-full rounded-none border-b-2 border-transparent bg-transparent px-0 pr-6 pb-3 text-sm font-normal shadow-none transition-colors data-[state=active]:bg-transparent data-[state=active]:font-medium data-[state=active]:shadow-none"
         >
           {header.label}
         </TabsTrigger>
@@ -81,45 +102,54 @@ export const ReasonsTabContent = () => {
         <TabsContent
           key={tab.value}
           value={tab.value}
-          className="data-[state=active]:animate-tabs mt-0 w-full"
+          className="data-[state=active]:animate-in data-[state=active]:fade-in-0 mt-0 w-full"
         >
-          <Card className="grid grid-cols-1 md:grid-cols-2 md:items-center">
-            <div className="p-6 md:p-8 lg:p-12">
-              <p className="mb-3 text-lg font-medium md:mb-4">{tab.tagline}</p>
-              <h2 className="mb-5 text-5xl font-semibold md:mb-6">
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16 lg:gap-24">
+            {/* Left - text content */}
+            <div className="flex flex-col">
+              <p className="text-border mb-5 font-serif text-6xl italic lg:text-7xl">
+                {tab.number}
+              </p>
+              <h3 className="text-foreground mb-4 font-serif text-2xl leading-snug font-normal lg:text-3xl">
                 {tab.title}
-              </h2>
-              <p className="text-lg font-medium">{tab.description}</p>
-
-              <div className="mt-6 flex items-center gap-x-4 md:mt-8">
-                <Button
-                  title={tab.primaryCta.title}
-                  variant={tab.primaryCta.variant}
-                  className="rounded-full px-3 py-1.5 shadow-none"
+              </h3>
+              <p className="text-muted-foreground mb-8 text-[15px] leading-relaxed font-light">
+                {tab.description}
+              </p>
+              <Button
+                variant="link"
+                className="text-foreground flex w-fit cursor-pointer items-center gap-0 px-0 text-sm font-medium underline-offset-4 hover:gap-1"
+              >
+                {tab.cta}
+                <svg
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  className="h-3.5 w-3.5"
                 >
-                  {tab.primaryCta.title}
-                </Button>
-                <Button
-                  title={tab.secondaryCta.title}
-                  variant={tab.secondaryCta.variant}
-                  size="link"
-                  className="flex items-center gap-1.5 px-3 py-1.5"
-                >
-                  {tab.secondaryCta.title}
-                  <RxChevronRight className="h-4 w-4" />
-                </Button>
-              </div>
+                  <path d="M3 8h10M9 4l4 4-4 4" />
+                </svg>
+              </Button>
             </div>
 
-            <div className="aspect-square">
-              <img
-                loading="lazy"
-                src={tab.imageSrc}
-                className="h-full w-full rounded-r-lg object-cover"
-                alt={tab.imageAlt}
-              />
+            {/* Right - stats */}
+            <div className="divide-border flex flex-col divide-y">
+              {tab.stats.map((stat, i) => (
+                <div
+                  key={i}
+                  className="first:border-border py-5 first:border-t"
+                >
+                  <p className="text-foreground mb-1 font-serif text-3xl font-normal">
+                    {stat.value}
+                  </p>
+                  <p className="text-muted-foreground text-[13px] leading-relaxed font-light">
+                    {stat.label}
+                  </p>
+                </div>
+              ))}
             </div>
-          </Card>
+          </div>
         </TabsContent>
       ))}
     </>

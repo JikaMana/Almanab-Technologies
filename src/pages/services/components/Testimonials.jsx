@@ -9,7 +9,7 @@ const renderStars = (rating) => {
     <BiSolidStar
       key={index}
       className={`mr-1 size-6 ${
-        index < rating ? "text-teal-500" : "text-gray-300"
+        index < rating ? "text-gold" : "text-gray-300"
       }`}
     />
   ));
@@ -17,7 +17,7 @@ const renderStars = (rating) => {
 
 export function Testimonials() {
   return (
-    <section className="flex-center bg-brand-shade-light px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="flex-center bg-brand-secondary px-[5%] py-16 text-white md:py-24 lg:py-28">
       <div className="container">
         <div className="mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
           <SectionHeader
@@ -37,7 +37,7 @@ export function Testimonials() {
                 <div className="mb-5 flex md:mb-6">
                   {renderStars(testimonial.rating)}
                 </div>
-                <blockquote className="text-medium text-gray-700">
+                <blockquote className="text-medium text-white">
                   {`"${testimonial.quote}"`}
                 </blockquote>
               </div>
@@ -49,10 +49,8 @@ export function Testimonials() {
                   className="mb-4 size-12 min-h-12 min-w-12 rounded-full object-cover md:mr-4 md:mb-0"
                 />
                 <div>
-                  <p className="font-semibold text-gray-900">
-                    {testimonial.name}
-                  </p>
-                  <p className="text-gray-500">{testimonial.title}</p>
+                  <p className="font-semibold text-white">{testimonial.name}</p>
+                  <p className="text-white">{testimonial.title}</p>
                 </div>
               </div>
             </Card>

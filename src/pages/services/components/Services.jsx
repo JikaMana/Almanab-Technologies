@@ -6,7 +6,7 @@ import { serviceTabsData } from "@/constants/services_data";
 
 const CubeIcon = () => (
   <div className="mb-4 flex size-8 items-center justify-center rounded-md border border-white/20 bg-white/10">
-    <div className="size-4 rotate-45 transform bg-teal-300 shadow-lg"></div>
+    <div className="bg-gold size-4 rotate-45 transform shadow-lg"></div>
   </div>
 );
 
@@ -16,7 +16,7 @@ const ServiceCard = ({ service, isFeatured }) => {
 
   if (isFeatured) {
     return (
-      <div className="bg-brand-main relative flex min-h-[400px] flex-col justify-between overflow-hidden rounded-2xl p-8 text-white shadow-2xl lg:col-span-2 lg:row-span-2">
+      <div className="bg-brand-secondary relative flex min-h-[400px] flex-col justify-between overflow-hidden rounded-2xl p-8 text-white shadow-2xl lg:col-span-2 lg:row-span-2">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{
@@ -58,7 +58,7 @@ const ServiceCard = ({ service, isFeatured }) => {
   }
 
   return (
-    <div className="bg-brand-main flex min-h-[200px] flex-col justify-between rounded-2xl p-6 text-white shadow-xl">
+    <div className="bg-brand-secondary flex min-h-[200px] flex-col justify-between rounded-2xl p-6 text-white shadow-xl">
       <div>
         <CubeIcon />
         <h3 className="mb-2 text-xl leading-snug font-bold">{category}</h3>
@@ -68,7 +68,7 @@ const ServiceCard = ({ service, isFeatured }) => {
         <Button
           size="sm"
           variant="ghost"
-          className="hover:bg-brand-main flex h-auto w-max cursor-pointer items-center gap-1.5 rounded-full px-0 py-1 text-base font-medium text-teal-400 hover:text-white"
+          className="hover:bg-brand-main text-gold flex h-auto w-max cursor-pointer items-center gap-1.5 rounded-full px-0 py-1 text-base font-medium hover:text-white"
         >
           <span>{service.primaryCta?.text.split(" ")[0] || "Explore"}</span>
           <RxChevronRight className="h-4 w-4" />
@@ -82,7 +82,7 @@ export function Services() {
   const data = serviceTabsData || [];
 
   return (
-    <section className="flex-center bg-teal-100/50 px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="flex-center bg-brand-main px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="flex flex-col items-center">
           <div className="mb-12 text-center md:mb-18 lg:mb-20">

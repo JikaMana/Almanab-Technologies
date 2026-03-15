@@ -14,16 +14,16 @@ import { HashLink } from "react-router-hash-link/dist/react-router-hash-link.cjs
 
 export const SectionHeaderCta = ({ btn1, btn2, whiteTexts }) => (
   <div className="flex-center mt-6 gap-x-4 md:mt-8">
-    <HashLink smooth to={`#${btn1}`}>
+    <HashLink smooth to={`/about-us`}>
       <Button
         title={btn1 || "Contact"}
         size="lg"
-        className={`hover:bg-brand-main h-auto w-max cursor-pointer rounded-full bg-transparent px-5 py-2.5 text-lg font-medium text-black shadow-none outline-2 outline-gray-400 hover:text-white ${whiteTexts ? "bg-brand-shade-dark text-white outline-none" : ""}`}
+        className={`hover:bg-brand-main/90 bg-brand-main h-auto w-max cursor-pointer rounded-full px-5 py-2.5 text-lg font-medium text-black shadow-none outline-2 hover:text-white ${whiteTexts ? "bg-brand-shade-dark text-white outline-none" : ""}`}
       >
         {btn1}
       </Button>
     </HashLink>
-    <HashLink smooth to={`#${btn2}`}>
+    <HashLink smooth to={`/project-cases`}>
       <Button
         title={btn2 || "Explore"}
         size="lg"

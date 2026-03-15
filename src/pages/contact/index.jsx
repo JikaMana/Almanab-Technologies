@@ -11,7 +11,7 @@ export default function Page() {
       <ContactHeader />
       <Contact />
       <PricingBreakdown />
-      <PricingPackages />
+      {/* <PricingPackages /> */}
       <FAQs />
     </div>
   );

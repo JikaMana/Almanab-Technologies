@@ -42,7 +42,7 @@ export function Process() {
   ];
 
   return (
-    <section className="flex-center overflow-hidden bg-[#CCEAEC] px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="flex-center bg-gold overflow-hidden px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="mb-12 md:mb-18 lg:mb-20">
           <SectionHeader
@@ -50,7 +50,6 @@ export function Process() {
             title="Our software development journey"
             description="A transparent and collaborative approach from initial consultation
               to final delivery."
-            showCta={true}
             className="max-w-[768px]"
           />
         </div>

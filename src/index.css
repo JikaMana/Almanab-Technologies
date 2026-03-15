@@ -45,98 +45,142 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  /* --- CUSTOM BRAND COLORS --- */
+  /* --- BRAND TOKENS --- */
   --color-brand-main: var(--brand-main);
   --color-brand-secondary: var(--brand-secondary);
   --color-brand-shade-light: var(--brand-shade-light);
   --color-brand-shade-dark: var(--brand-shade-dark);
+  --color-gold: var(--gold);
+  --color-dark: var(--dark);
+  --color-white: var(--white);
+  --color-light-gray: var(--light-gray);
 }
 
 :root {
   --radius: 0.625rem;
-  /* shadcn/ui Colors (converted to Hex) */
-  --background: #ffffff; /* oklch(1 0 0) */
-  --foreground: #141721; /* oklch(0.129 0.042 264.695) */
-  --card: #ffffff; /* oklch(1 0 0) */
-  --card-foreground: #141721; /* oklch(0.129 0.042 264.695) */
-  --popover: #ffffff; /* oklch(1 0 0) */
-  --popover-foreground: #141721; /* oklch(0.129 0.042 264.695) */
-  --primary: #28303f; /* oklch(0.208 0.042 265.755) */
-  --primary-foreground: #f9fafc; /* oklch(0.984 0.003 247.858) */
-  --secondary: #f6f7f9; /* oklch(0.968 0.007 247.896) */
-  --secondary-foreground: #28303f; /* oklch(0.208 0.042 265.755) */
-  --muted: #f6f7f9; /* oklch(0.968 0.007 247.896) */
-  --muted-foreground: #7c8290; /* oklch(0.554 0.046 257.417) */
-  --accent: #f6f7f9; /* oklch(0.968 0.007 247.896) */
-  --accent-foreground: #28303f; /* oklch(0.208 0.042 265.755) */
-  --destructive: #a83637; /* oklch(0.577 0.245 27.325) */
-  --border: #e8eaf1; /* oklch(0.929 0.013 255.508) */
-  --input: #e8eaf1; /* oklch(0.929 0.013 255.508) */
-  --ring: #a3a8b3; /* oklch(0.704 0.04 256.788) */
-  /* Chart Colors (converted to Hex) */
-  --chart-1: #b55d28; /* oklch(0.646 0.222 41.116) */
-  --chart-2: #3e8d70; /* oklch(0.6 0.118 184.704) */
-  --chart-3: #125585; /* oklch(0.398 0.07 227.392) */
-  --chart-4: #f8b44a; /* oklch(0.828 0.189 84.429) */
-  --chart-5: #f98f26; /* oklch(0.769 0.188 70.08) */
-  /* Sidebar Colors (converted to Hex) */
-  --sidebar: #f9fafc; /* oklch(0.984 0.003 247.858) */
-  --sidebar-foreground: #141721; /* oklch(0.129 0.042 264.695) */
-  --sidebar-primary: #28303f; /* oklch(0.208 0.042 265.755) */
-  --sidebar-primary-foreground: #f9fafc; /* oklch(0.984 0.003 247.858) */
-  --sidebar-accent: #f6f7f9; /* oklch(0.968 0.007 247.896) */
-  --sidebar-accent-foreground: #28303f; /* oklch(0.208 0.042 265.755) */
-  --sidebar-border: #e8eaf1; /* oklch(0.929 0.013 255.508) */
-  --sidebar-ring: #a3a8b3; /* oklch(0.704 0.04 256.788) */
 
-  /* --- CUSTOM BRAND COLORS --- */
-  --brand-main: #003d40;
-  --brand-secondary: #f6efd7;
-  --brand-shade-light: #cceaec;
-  --brand-shade-dark: #0199a1;
+  /* --- RAW BRAND TOKENS --- */
+  --gold: #d3af30;
+  --dark: #222222;
+  --gold-light: #fdf6dc; /* gold washed — surfaces, hovers */
+  --gold-deep: #b8941a; /* gold darkened — active, borders */
+  --ash-mid: #4a4a4a; /* secondary text */
+  --ash-light: #6b6b6b; /* muted/placeholder text */
+  --white: #ffffff;
+  --light-gray: #f9f9f9;
+  --border-gray: #e6e6e6;
+
+  /* --- SEMANTIC TOKENS --- */
+  --background: #ffffff;
+  --foreground: #222222;
+
+  --card: #ffffff;
+  --card-foreground: #222222;
+
+  --popover: #ffffff;
+  --popover-foreground: #222222;
+
+  --primary: #222222;
+  --primary-foreground: #ffffff;
+
+  --secondary: #f9f9f9;
+  --secondary-foreground: #222222;
+
+  --muted: #f9f9f9;
+  --muted-foreground: #6b6b6b;
+
+  --accent: #fdf6dc;
+  --accent-foreground: #222222;
+
+  --destructive: #8b1a1a;
+
+  --border: #e6e6e6;
+  --input: #e6e6e6;
+  --ring: #d3af30;
+
+  /* Charts — gold-to-ash scale only, no outside colors */
+  --chart-1: #d3af30;
+  --chart-2: #b8941a;
+  --chart-3: #4a4a4a;
+  --chart-4: #6b6b6b;
+  --chart-5: #e6e6e6;
+
+  /* Sidebar */
+  --sidebar: #f9f9f9;
+  --sidebar-foreground: #222222;
+  --sidebar-primary: #222222;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #fdf6dc;
+  --sidebar-accent-foreground: #222222;
+  --sidebar-border: #e6e6e6;
+  --sidebar-ring: #d3af30;
+
+  /* --- BRAND ALIASES (used by brand-* Tailwind classes in components) --- */
+  --brand-main: #d3af30;
+  --brand-secondary: #222222;
+  --brand-shade-light: #fdf6dc;
+  --brand-shade-dark: #b8941a;
 }
 
 .dark {
-  /* shadcn/ui Dark Mode Colors (converted to Hex) */
-  --background: #141721; /* oklch(0.129 0.042 264.695) */
-  --foreground: #f9fafc; /* oklch(0.984 0.003 247.858) */
-  --card: #28303f; /* oklch(0.208 0.042 265.755) */
-  --card-foreground: #f9fafc; /* oklch(0.984 0.003 247.858) */
-  --popover: #28303f; /* oklch(0.208 0.042 265.755) */
-  --popover-foreground: #f9fafc; /* oklch(0.984 0.003 247.858) */
-  --primary: #e8eaf1; /* oklch(0.929 0.013 255.508) */
-  --primary-foreground: #28303f; /* oklch(0.208 0.042 265.755) */
-  --secondary: #384054; /* oklch(0.279 0.041 260.031) */
-  --secondary-foreground: #f9fafc; /* oklch(0.984 0.003 247.858) */
-  --muted: #384054; /* oklch(0.279 0.041 260.031) */
-  --muted-foreground: #a3a8b3; /* oklch(0.704 0.04 256.788) */
-  --accent: #384054; /* oklch(0.279 0.041 260.031) */
-  --accent-foreground: #f9fafc; /* oklch(0.984 0.003 247.858) */
-  --destructive: #cb453e; /* oklch(0.704 0.191 22.216) */
-  --border: rgba(255, 255, 255, 0.1); /* oklch(1 0 0 / 10%) */
-  --input: rgba(255, 255, 255, 0.15); /* oklch(1 0 0 / 15%) */
-  --ring: #848a96; /* oklch(0.551 0.027 264.364) */
-  /* Chart Colors (converted to Hex) */
-  --chart-1: #647087; /* oklch(0.488 0.243 264.376) */
-  --chart-2: #84b1a0; /* oklch(0.696 0.17 162.48) */
-  --chart-3: #f98f26; /* oklch(0.769 0.188 70.08) */
-  --chart-4: #a65a9e; /* oklch(0.627 0.265 303.9) */
-  --chart-5: #b26a40; /* oklch(0.645 0.246 16.439) */
-  /* Sidebar Colors (converted to Hex) */
-  --sidebar: #28303f; /* oklch(0.208 0.042 265.755) */
-  --sidebar-foreground: #f9fafc; /* oklch(0.984 0.003 247.858) */
-  --sidebar-primary: #647087; /* oklch(0.488 0.243 264.376) */
-  --sidebar-primary-foreground: #f9fafc; /* oklch(0.984 0.003 247.858) */
-  --sidebar-accent: #384054; /* oklch(0.279 0.041 260.031) */
-  --sidebar-accent-foreground: #f9fafc; /* oklch(0.984 0.003 247.858) */
-  --sidebar-border: rgba(255, 255, 255, 0.1); /* oklch(1 0 0 / 10%) */
-  --sidebar-ring: #848a96; /* oklch(0.551 0.027 264.364) */
+  /* --- RAW BRAND TOKENS --- */
+  --gold: #d3af30;
+  --gold-light: #fdf6dc;
+  --gold-deep: #e8c84a;
+  --dark: #222222;
+  --white: #ffffff;
+  --light-gray: #f9f9f9;
 
-  /* --- CUSTOM BRAND COLORS --- */
-  --brand-main: #003d40;
-  --brand-secondary: #f6efd7;
-  --brand-shade-light: #cceaec;
-  --brand-shade-dark: #0199a1;
+  /* --- SEMANTIC TOKENS --- */
+  --background: #1a1a1a;
+  --foreground: #f9f9f9;
+
+  --card: #2a2a2a;
+  --card-foreground: #f9f9f9;
+
+  --popover: #2a2a2a;
+  --popover-foreground: #f9f9f9;
+
+  --primary: #d3af30; /* gold leads in dark mode */
+  --primary-foreground: #222222;
+
+  --secondary: #333333;
+  --secondary-foreground: #f9f9f9;
+
+  --muted: #333333;
+  --muted-foreground: #a0a0a0;
+
+  --accent: #3a3217; /* dark gold-tinted surface */
+  --accent-foreground: #d3af30;
+
+  --destructive: #c0392b;
+
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.12);
+  --ring: #d3af30;
+
+  /* Charts */
+  --chart-1: #d3af30;
+  --chart-2: #e8c84a;
+  --chart-3: #f9f9f9;
+  --chart-4: #a0a0a0;
+  --chart-5: #333333;
+
+  /* Sidebar */
+  --sidebar: #2a2a2a;
+  --sidebar-foreground: #f9f9f9;
+  --sidebar-primary: #d3af30;
+  --sidebar-primary-foreground: #222222;
+  --sidebar-accent: #3a3217;
+  --sidebar-accent-foreground: #d3af30;
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: #d3af30;
+
+  /* --- BRAND ALIASES --- */
+  --brand-main: #d3af30;
+  --brand-secondary: #222222;
+  --brand-shade-light: #3a3217;
+  --brand-shade-dark: #e8c84a;
 }
 
 @layer base {
@@ -156,13 +200,9 @@
 
 @layer utilities {
   .scrollbar-hidden {
-    /* For Internet Explorer and Edge */
     -ms-overflow-style: none;
-    /* For Firefox */
     scrollbar-width: none;
   }
-
-  /* For Chrome, Safari, and Opera */
   .scrollbar-hidden::-webkit-scrollbar {
     display: none;
   }

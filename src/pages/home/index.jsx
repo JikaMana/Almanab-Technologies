@@ -17,10 +17,10 @@ export default function Home() {
       <WhyChooseUs />
       <Services />
       <Features />
-      <Process />
       <Portfolio />
+      <Process />
       <ClientStories />
-      <OurVisionAndMission />
+      {/* <OurVisionAndMission /> */}
       <Faq />
       <Contact />
     </div>

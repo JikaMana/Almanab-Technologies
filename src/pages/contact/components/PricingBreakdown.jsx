@@ -6,7 +6,7 @@ export function PricingBreakdown() {
       <div className="container mx-auto">
         {/* HEADER */}
         <div className="mx-auto mb-12 max-w-2xl text-center">
-          <p className="mb-3 font-semibold tracking-widest text-teal-600 uppercase">
+          <p className="text-brand-main mb-3 font-semibold tracking-widest uppercase">
             Pricing
           </p>
           <h2 className="mb-4 text-4xl font-extrabold">

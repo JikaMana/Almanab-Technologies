@@ -28,7 +28,7 @@ const useForm = () => {
 export function Footer() {
   const formState = useForm();
   return (
-    <footer className="bg-brand-main px-[5%] py-12 text-lg text-white md:py-18 lg:py-20">
+    <footer className="bg-brand-secondary px-[5%] py-12 text-lg text-white md:py-18 lg:py-20">
       <div className="container mx-auto">
         <div className="items-stadrt mb-12 block items-center justify-between md:mb-18 lg:mb-20 lg:flex">
           <div className="mb-6 lg:mb-0">
@@ -54,7 +54,7 @@ export function Footer() {
                 <Button
                   title="Subscribe"
                   size="xl"
-                  className="bg-brand-shade-dark w-full cursor-pointer rounded-full border-2 border-transparent px-5 py-2.5 text-lg font-medium shadow-none hover:border-white hover:bg-transparent sm:w-max"
+                  className="bg-brand-main hover:bg-brand-main/90 w-full cursor-pointer rounded-full border-2 border-transparent px-5 py-2.5 text-lg font-medium shadow-none hover:border-white sm:w-max"
                 >
                   Subscribe
                 </Button>
@@ -73,8 +73,8 @@ export function Footer() {
           <a href="#">
             <img
               loading="lazy"
-              src="/codefloxx.svg"
-              className="h-24 w-24"
+              src="/almanab.svg"
+              className="h-12 sm:h-16 md:h-24"
               alt="Codefloxx Logo image"
             />
           </a>
@@ -206,7 +206,7 @@ export function Footer() {
             <ul>
               <li className="py-2 text-sm">
                 <a
-                  href="https://www.instagram.com/codefloxx_tech"
+                  href="https://www.instagram.com/almanab.tech"
                   target="_blank"
                   className="flex items-center gap-3"
                 >
@@ -233,7 +233,7 @@ export function Footer() {
               </li>
               {/* <li className="py-2 text-sm">
                 <a
-                  href="https://www.instagram.com/codefloxx_tech"
+                  href="https://www.instagram.com/almanab.tech"
                   target="_blank"
                   className="flex items-center gap-3"
                 >
@@ -257,7 +257,8 @@ export function Footer() {
           <div className="flex flex-col-reverse items-start md:flex-row md:gap-6 lg:items-center">
             <div className="grid grid-flow-row grid-cols-[max-content] justify-center gap-y-4 md:grid-flow-col md:justify-center md:gap-x-6 md:gap-y-0 lg:text-left">
               <p className="mt-8 md:mt-0">
-                © {new Date().getFullYear()} Codefloxx. All rights reserved.
+                © {new Date().getFullYear()} Almanāb Technologies. All rights
+                reserved.
               </p>
               <a href="#" className="underline">
                 Privacy policy
@@ -271,11 +272,11 @@ export function Footer() {
             </div>
           </div>
           <div className="flex-center mb-8 gap-3 lg:mb-0">
-            <a href="#">
-              <BiLogoFacebookCircle className="size-6" />
+            <a href="https://www.instagram.com/almanab.tech">
+              <BiLogoInstagram className="size-6" />
             </a>
             <a href="#">
-              <BiLogoInstagram className="size-6" />
+              <BiLogoFacebookCircle className="size-6" />
             </a>
             <a href="#">
               <FaXTwitter className="size-6 p-0.5" />

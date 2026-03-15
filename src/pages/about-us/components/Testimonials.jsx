@@ -17,7 +17,7 @@ const renderStars = (rating) => {
 
 export function Testimonials() {
   return (
-    <section className="flex-center bg-brand-shade-light px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="flex-center bg-white px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="mx-auto mb-12 w-full text-center md:mb-18 lg:mb-20">
           <SectionHeader

@@ -1,15 +1,4 @@
-# robots.txt for Codefloxx
 User-agent: *
 Allow: /
 
-# Disallow private or system routes
-Disallow: /admin/
-Disallow: /api/
-Disallow: /private/
-
-# Sitemap location
-Sitemap: https://www.codefloxx.com/sitemap.xml
-
-# Helpful comments
-# This file guides search engines on what parts of your site to index.
-# Updated: 2025-10-09
+Sitemap: https://www.almanab.tech/sitemap.xml

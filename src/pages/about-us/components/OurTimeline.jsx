@@ -61,7 +61,7 @@ const milestones = [
 
 export function OurTimeline() {
   return (
-    <section className="flex-center bg-brand-main px-[5%] py-16 text-white md:py-24 lg:py-28">
+    <section className="flex-center bg-brand-secondary px-[5%] py-16 text-white md:py-24 lg:py-28">
       <div className="container">
         {/* Header */}
         <div className="flex flex-col items-center">

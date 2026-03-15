@@ -3,7 +3,7 @@ export const faqData = [
     id: 1,
     question: "How long does a typical project take?",
     answer:
-      "Project duration varies depending on complexity. Most projects range from 4 to 12 weeks. We provide detailed timelines during initial consultation.",
+      "Project duration varies depending on complexity. Most projects range from 1 to 16 weeks. We provide detailed timelines during initial consultation.",
   },
   {
     id: 2,

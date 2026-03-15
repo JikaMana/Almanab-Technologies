@@ -4,7 +4,7 @@ import React from "react";
 
 export function ServiceHeader() {
   return (
-    <section className="flex-center bg-brand-main px-[5%] py-24 md:py-32 lg:py-36">
+    <section className="flex-center bg-brand-secondary px-[5%] py-24 md:py-32 lg:py-36">
       <div className="container text-center">
         <SectionHeader
           tagline="Craft"

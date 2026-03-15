@@ -15,11 +15,11 @@ function TestimonialCard({ testimonial }) {
       <div className="mb-5 md:mb-6">
         <div className="mb-5 flex md:mb-6">
           {stars.map((_, i) => (
-            <BiSolidStar key={i} className="mr-1 size-6 text-black" />
+            <BiSolidStar key={i} className="text-gold mr-1 size-6" />
           ))}
         </div>
 
-        <blockquote className="text-medium text-lg leading-relaxed">
+        <blockquote className="text-medium text-lg leading-relaxed text-white">
           {testimonial.quote}
         </blockquote>
       </div>
@@ -31,9 +31,9 @@ function TestimonialCard({ testimonial }) {
           alt={`Avatar of ${testimonial.author}`}
           className="mb-4 size-12 min-h-12 min-w-12 rounded-full object-cover md:mr-4 md:mb-0"
         />
-        <div>
+        <div className="text-white">
           <p className="font-semibold">{testimonial.author}</p>
-          <p className="text-sm text-gray-600">{testimonial.title}</p>
+          <p className="text-sm">{testimonial.title}</p>
         </div>
       </div>
     </Card>
