@@ -21,7 +21,7 @@ export function EcosystemSupport() {
               showCta={false}
               className="text-left"
             />
-            <div className="mt-6 flex gap-x-4 md:mt-8">
+            {/* <div className="mt-6 flex gap-x-4 md:mt-8">
               <Button
                 title="Support"
                 size="lg"
@@ -39,7 +39,7 @@ export function EcosystemSupport() {
                 <span>Optimize</span>
                 <RxChevronRight className="h-4 w-4" />
               </Button>
-            </div>
+            </div> */}
           </div>
           <div className="max-h-[588px] w-full overflow-hidden rounded-xl shadow-lg">
             <img

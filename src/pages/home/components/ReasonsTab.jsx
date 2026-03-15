@@ -3,6 +3,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Link } from "react-router-dom";
 
 const tabHeaders = [
   { value: "tab-one", label: "Scalability" },
@@ -18,6 +19,7 @@ const tabContentData = [
     description:
       "We design systems with headroom — not just for where you are today, but for 10× the load, new markets, and product pivots you haven't planned yet. Clean abstractions, modular services, and sensible defaults that prevent future rewrites.",
     cta: "Explore our approach",
+    url: "#process",
     stats: [
       {
         value: "99.98%",
@@ -40,6 +42,7 @@ const tabContentData = [
     description:
       "Slow software costs you users. We instrument and profile from day one — optimizing renders, reducing bundle sizes, indexing databases properly, and choosing the right infrastructure for your workload before it becomes a crisis.",
     cta: "See our process",
+    url: "/project-cases#roadmap",
     stats: [
       {
         value: "< 1.2s",
@@ -62,6 +65,7 @@ const tabContentData = [
     description:
       "We keep up with what matters — AI integrations, edge runtimes, new frameworks — but we only adopt what genuinely solves your problem. No hype-driven rewrites. Just sound decisions that keep your codebase clean and your team moving fast.",
     cta: "View case studies",
+    utl: "/project-cases",
     stats: [
       {
         value: "50+",
@@ -86,7 +90,7 @@ export const ReasonsTabHeader = () => {
         <TabsTrigger
           key={header.value}
           value={header.value}
-          className="text-muted-foreground data-[state=active]:border-foreground data-[state=active]:text-foreground mx-auto w-full rounded-none border-b-2 border-transparent bg-transparent px-0 pr-6 pb-3 text-sm font-normal shadow-none transition-colors data-[state=active]:bg-transparent data-[state=active]:font-medium data-[state=active]:shadow-none"
+          className="text-muted-foreground data-[state=active]:border-foreground data-[state=active]:text-foreground mx-auto w-full cursor-pointer rounded-none border-b-2 border-transparent bg-transparent px-0 pr-6 pb-3 text-sm font-normal shadow-none transition-colors data-[state=active]:bg-transparent data-[state=active]:font-medium data-[state=active]:shadow-none"
         >
           {header.label}
         </TabsTrigger>
@@ -107,30 +111,32 @@ export const ReasonsTabContent = () => {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16 lg:gap-24">
             {/* Left - text content */}
             <div className="flex flex-col">
-              <p className="text-border mb-5 font-serif text-6xl italic lg:text-7xl">
+              <p className="text-border mb-5 text-6xl italic lg:text-7xl">
                 {tab.number}
               </p>
-              <h3 className="text-foreground mb-4 font-serif text-2xl leading-snug font-normal lg:text-3xl">
+              <h3 className="text-foreground mb-4 text-2xl leading-snug font-normal lg:text-3xl">
                 {tab.title}
               </h3>
               <p className="text-muted-foreground mb-8 text-[15px] leading-relaxed font-light">
                 {tab.description}
               </p>
-              <Button
-                variant="link"
-                className="text-foreground flex w-fit cursor-pointer items-center gap-0 px-0 text-sm font-medium underline-offset-4 hover:gap-1"
-              >
-                {tab.cta}
-                <svg
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  className="h-3.5 w-3.5"
+              <a href={tab.url}>
+                <Button
+                  variant="link"
+                  className="text-foreground flex w-fit cursor-pointer items-center gap-0 px-0 text-sm font-medium underline-offset-4 hover:gap-1"
                 >
-                  <path d="M3 8h10M9 4l4 4-4 4" />
-                </svg>
-              </Button>
+                  {tab.cta}
+                  <svg
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    className="h-3.5 w-3.5"
+                  >
+                    <path d="M3 8h10M9 4l4 4-4 4" />
+                  </svg>
+                </Button>
+              </a>
             </div>
 
             {/* Right - stats */}
@@ -140,7 +146,7 @@ export const ReasonsTabContent = () => {
                   key={i}
                   className="first:border-border py-5 first:border-t"
                 >
-                  <p className="text-foreground mb-1 font-serif text-3xl font-normal">
+                  <p className="text-foreground mb-1 text-3xl font-normal">
                     {stat.value}
                   </p>
                   <p className="text-muted-foreground text-[13px] leading-relaxed font-light">

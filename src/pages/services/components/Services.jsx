@@ -36,7 +36,7 @@ const ServiceCard = ({ service, isFeatured }) => {
               perform under pressure.
             </p>
           </div>
-          <div className="mt-8 flex gap-x-3">
+          {/* <div className="mt-8 flex gap-x-3">
             <Button
               size="lg"
               className="hover:bg-brand-shade-dark h-auto w-max cursor-pointer rounded-full bg-white px-5 py-2.5 text-lg font-medium text-gray-900 shadow-md transition-colors hover:text-white"
@@ -51,7 +51,7 @@ const ServiceCard = ({ service, isFeatured }) => {
               <span>Details</span>
               <RxChevronRight className="h-4 w-4" />
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     );

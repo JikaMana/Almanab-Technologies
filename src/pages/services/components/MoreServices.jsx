@@ -21,7 +21,7 @@ export function MoreServices() {
               <li>Advanced security protocols</li>
               <li>Performance optimization</li>
             </ul>
-            <div className="mt-6 flex gap-x-4 md:mt-8">
+            {/* <div className="mt-6 flex gap-x-4 md:mt-8">
               <Button
                 title="Explore"
                 size="lg"
@@ -39,7 +39,7 @@ export function MoreServices() {
                 <span>Details</span>
                 <RxChevronRight className="h-4 w-4" />
               </Button>
-            </div>
+            </div> */}
           </div>
           <div className="max-h-[732px] w-full overflow-hidden">
             <img
@@ -73,7 +73,7 @@ export function MoreServices() {
               <li>Wireframing and prototyping</li>
               <li>Interaction design</li>
             </ul>
-            <div className="mt-6 flex gap-x-4 md:mt-8">
+            {/* <div className="mt-6 flex gap-x-4 md:mt-8">
               <Button
                 title="Review"
                 size="lg"
@@ -91,7 +91,7 @@ export function MoreServices() {
                 <span>Explore</span>
                 <RxChevronRight className="h-4 w-4" />
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

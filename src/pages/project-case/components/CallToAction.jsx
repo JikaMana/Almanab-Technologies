@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function CallToAction() {
   return (
@@ -35,22 +36,25 @@ export function CallToAction() {
           </p>
 
           <div className="flex-center mt-6 gap-x-4 md:mt-8">
-            <Button
-              title="Consult"
-              size="lg"
-              className="hover:text-brand-main hover:bg-brand-secondary bg-brand-secondary h-auto w-max cursor-pointer rounded-full px-5 py-2.5 text-lg font-medium"
-            >
-              Book Consultation
-            </Button>
-
-            <Button
-              title="Quote"
-              size="lg"
-              variant="outline"
-              className="text-brand-secondary border-brand-secondary h-auto w-max cursor-pointer rounded-full border-2 bg-transparent px-5 py-2.5 text-lg font-medium shadow-none transition-colors hover:bg-teal-600 hover:text-white"
-            >
-              Get Quote
-            </Button>
+            <Link to="/contact">
+              <Button
+                title="Consult"
+                size="lg"
+                className="hover:text-brand-main hover:bg-brand-secondary bg-brand-secondary h-auto w-max cursor-pointer rounded-full px-5 py-2.5 text-lg font-medium"
+              >
+                Book Consultation
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button
+                title="Quote"
+                size="lg"
+                variant="outline"
+                className="text-brand-secondary border-brand-secondary h-auto w-max cursor-pointer rounded-full border-2 bg-transparent px-5 py-2.5 text-lg font-medium shadow-none transition-colors hover:bg-teal-600 hover:text-white"
+              >
+                Get Quote
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

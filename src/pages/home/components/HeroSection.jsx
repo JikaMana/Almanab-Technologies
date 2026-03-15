@@ -206,8 +206,8 @@ const HeroSection = () => {
         animate="show"
         className="relative z-10 flex items-center justify-between px-6 py-4 md:px-12 lg:px-16"
       >
-        <span className="text-[10px] font-semibold tracking-[0.2em] text-white/20 uppercase">
-          Nigeria — Available Worldwide
+        <span className="hidden text-[10px] font-semibold tracking-[0.2em] text-white/20 uppercase sm:block">
+          Nigeria - Available Worldwide
         </span>
         <span className="text-[10px] font-semibold tracking-[0.2em] text-white/20 uppercase">
           Full-Stack · Mobile · SaaS · E-commerce

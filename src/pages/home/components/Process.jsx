@@ -42,7 +42,10 @@ export function Process() {
   ];
 
   return (
-    <section className="flex-center bg-gold overflow-hidden px-[5%] py-16 md:py-24 lg:py-28">
+    <section
+      id="process"
+      className="flex-center bg-gold overflow-hidden px-[5%] py-16 md:py-24 lg:py-28"
+    >
       <div className="container">
         <div className="mb-12 md:mb-18 lg:mb-20">
           <SectionHeader

@@ -16,7 +16,6 @@ export function AboutUsStorySection() {
                 description=" Code Floxx emerged from a passion to solve complex digital
                 challenges. We started small but grew through dedication and
                 technical excellence."
-                showCta={true}
                 className="max-w-[768px]"
               />
             </div>

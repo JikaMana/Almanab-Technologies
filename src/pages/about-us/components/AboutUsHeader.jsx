@@ -1,6 +1,7 @@
 import { SectionHeader } from "@/components/SectionHeader";
 import { Button } from "@/components/ui/button";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function AboutUsHeader() {
   return (
@@ -11,12 +12,18 @@ export function AboutUsHeader() {
           title="Digital solutions that work"
           description="We build robust software solutions that transform businesses across
           Nigeria and beyond with precision and expertise"
-          showCta={true}
           whiteTexts={true}
-          btn1="Consult"
-          btn2="Quote"
-          className="text-white"
+          className="mb-8 text-white"
         />
+        <Link to="/contact">
+          <Button
+            title="Consult"
+            size="lg"
+            className="bg-gold hover:bg-gold/90 h-auto w-max cursor-pointer rounded-full px-5 py-2.5 text-lg font-medium text-white transition-colors"
+          >
+            Consult
+          </Button>
+        </Link>
       </div>
     </section>
   );

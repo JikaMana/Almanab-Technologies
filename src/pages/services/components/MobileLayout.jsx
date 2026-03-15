@@ -91,7 +91,7 @@ export function MobileLayout() {
                 </div>
               ))}
             </div>
-            <div className="mt-6 flex gap-x-4 md:mt-8">
+            {/* <div className="mt-6 flex gap-x-4 md:mt-8">
               <Button
                 title="Discover"
                 size="lg"
@@ -109,7 +109,7 @@ export function MobileLayout() {
                 <span>Learn</span>
                 <RxChevronRight className="h-4 w-4" />
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

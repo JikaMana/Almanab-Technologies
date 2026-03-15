@@ -97,6 +97,7 @@ export function CodefloxxTeam() {
             size="lg"
             title="Open positions"
             variant="outline"
+            onClick={() => alert("No current open positions")}
             className="hover:bg-brand-shade-dark mt-6 h-auto w-max cursor-pointer rounded-full border-2 border-gray-300 bg-transparent px-5 py-2.5 text-lg font-medium text-gray-900 transition-colors hover:text-white"
           >
             Open positions

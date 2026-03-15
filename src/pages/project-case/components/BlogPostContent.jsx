@@ -149,7 +149,10 @@ export function BlogPostContent() {
   ];
 
   return (
-    <section className="flex-center bg-brand-shade-light px-[5%] py-16 md:py-24 lg:py-28">
+    <section
+      id="roadmap"
+      className="flex-center bg-brand-shade-light px-[5%] py-16 md:py-24 lg:py-28"
+    >
       <div className="container">
         <div className="xxl:gap-x-48 grid w-full grid-cols-1 gap-y-8 lg:grid-cols-[20rem_1fr] lg:gap-x-16">
           <div>
