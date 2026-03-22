@@ -14,7 +14,7 @@ export function WhyChooseUs() {
             title={<>Built for teams who ship with confidence</>}
             description="We partner with founders and product teams to build software that is fast, resilient, and built to last - not just to demo."
             showCta={true}
-            className="max-w-[620px]"
+            className="max-w-200"
           />
         </div>
 

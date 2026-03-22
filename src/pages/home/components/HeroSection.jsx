@@ -119,7 +119,7 @@ const HeroSection = () => {
         </motion.div>
 
         {/* Headline */}
-        <div className="max-w-6xl">
+        <div className="">
           <motion.h1
             variants={fadeUp}
             custom={0.2}

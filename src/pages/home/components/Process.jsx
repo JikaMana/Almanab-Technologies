@@ -44,7 +44,7 @@ export function Process() {
   return (
     <section
       id="process"
-      className="flex-center bg-gold overflow-hidden px-[5%] py-16 md:py-24 lg:py-28"
+      className="flex-center overflow-hidden bg-white px-[5%] py-16 md:py-24 lg:py-28"
     >
       <div className="container">
         <div className="mb-12 md:mb-18 lg:mb-20">
@@ -53,7 +53,7 @@ export function Process() {
             title="Our software development journey"
             description="A transparent and collaborative approach from initial consultation
               to final delivery."
-            className="max-w-[768px]"
+            className="max-w-3xl"
           />
         </div>
         <div className="relative grid auto-cols-fr grid-cols-1 gap-x-4 gap-y-12 overflow-hidden sm:grid-cols-2 lg:flex">
