@@ -13,7 +13,7 @@ export function AboutUsStorySection() {
               <SectionHeader
                 tagline="Story"
                 title="Our journey in software development"
-                description=" Code Floxx emerged from a passion to solve complex digital
+                description=" Almanāb Technologies emerged from a passion to solve complex digital
                 challenges. We started small but grew through dedication and
                 technical excellence."
                 className="max-w-[768px]"

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export function ProjectCaseHeader() {
   return (
-    <section className="flex-center bg-brand-main px-[5%] pt-24 md:pt-32 lg:pt-36">
+    <section className="flex-center bg-brand-secondary px-[5%] pt-24 md:pt-32 lg:pt-36">
       <div className="container">
         <div className="mx-auto mb-12 text-center md:mb-18 lg:mb-20">
           <SectionHeader
@@ -14,7 +14,7 @@ export function ProjectCaseHeader() {
             description="  Transforming complex challenges into elegant software experiences
             for businesses across Nigeria, Africa and Worldwide."
             whiteTexts={true}
-            className="text-brand-secondary max-w-[658px]"
+            className="text-brand-main max-w-[658px]"
           />
           <div className="mt-5 flex flex-wrap justify-center gap-2 md:mt-6">
             <Badge className="bg-brand-shade-dark hover:bg-brand-secondary rounded-full px-3 py-1.5 transition-all duration-500">

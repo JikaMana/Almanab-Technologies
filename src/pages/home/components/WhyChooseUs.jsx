@@ -11,10 +11,10 @@ export function WhyChooseUs() {
         <div className="mb-12 md:mb-16 lg:mb-20">
           <SectionHeader
             tagline="Why Almanāb Technologies"
-            title={<>Built for teams who ship with confidence</>}
-            description="We partner with founders and product teams to build software that is fast, resilient, and built to last - not just to demo."
+            title={<>We Build Software That Works When It Matters</>}
+            description="From web platforms to mobile apps - we partner with founders and businesses to ship products that are fast, reliable, and built to grow."
             showCta={true}
-            className="max-w-200"
+            className="max-w-232"
           />
         </div>
 

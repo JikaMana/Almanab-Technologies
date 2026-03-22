@@ -130,7 +130,7 @@ export function BlogPostContent() {
         {
           type: "blockquote",
           text: "The team's dedication to clean code and iterative delivery was paramount. This allowed us to consistently meet sprint goals and rapidly respond to emergent feedback without sacrificing stability.",
-          source: "-Lead Software Engineer, Codefloxx Technologies",
+          source: "-Lead Software Engineer, Almanāb TechnologiesTechnologies",
         },
       ],
     },

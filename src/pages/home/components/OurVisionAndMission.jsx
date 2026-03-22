@@ -108,7 +108,7 @@ export const OurVisionAndMission = () => {
           loading="lazy"
           className="h-full w-full object-cover"
           src="https://res.cloudinary.com/deid1vy94/image/upload/v1759174433/codefloxx-software-services_ehyjzw.webp"
-          alt="Codefloxx Sofware company service"
+          alt="Almanāb TechnologiesSofware company service"
         />
       </div>
     </div>

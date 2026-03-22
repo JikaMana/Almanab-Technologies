@@ -50,7 +50,7 @@ export function CallToAction() {
                 title="Quote"
                 size="lg"
                 variant="outline"
-                className="text-brand-secondary border-brand-secondary h-auto w-max cursor-pointer rounded-full border-2 bg-transparent px-5 py-2.5 text-lg font-medium shadow-none transition-colors hover:bg-teal-600 hover:text-white"
+                className="text-brand-secondary border-brand-secondary hover:bg-brand-secondary h-auto w-max cursor-pointer rounded-full border-2 bg-transparent px-5 py-2.5 text-lg font-medium shadow-none transition-colors hover:text-white"
               >
                 Get Quote
               </Button>

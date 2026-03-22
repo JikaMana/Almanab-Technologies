@@ -75,7 +75,7 @@ export function Footer() {
               loading="lazy"
               src="/almanab.svg"
               className="h-12 sm:h-16 md:h-24"
-              alt="Codefloxx Logo image"
+              alt="Almanāb TechnologiesLogo image"
             />
           </a>
 

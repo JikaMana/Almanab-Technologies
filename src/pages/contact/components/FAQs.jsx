@@ -71,9 +71,9 @@ export function FAQs() {
                 className="w-full border-none"
               >
                 <AccordionTrigger
-                  className="w-full px-6 py-5 text-lg font-semibold text-gray-800 transition-colors hover:text-teal-600 [&[data-state=open]>svg]:rotate-180"
+                  className="hover:text-brand-secondary w-full px-6 py-5 text-lg font-semibold text-gray-800 transition-colors [&[data-state=open]>svg]:rotate-180"
                   icon={
-                    <RxPlus className="size-6 shrink-0 text-teal-600 transition-transform duration-300 md:size-7" />
+                    <RxPlus className="text-brand-secondary size-6 shrink-0 transition-transform duration-300 md:size-7" />
                   }
                 >
                   {item.question}

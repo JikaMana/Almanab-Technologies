@@ -23,7 +23,7 @@ export function Testimonials() {
           <SectionHeader
             tagline=""
             title="Client testimonials"
-            description="What our clients say about working with Code Floxx"
+            description="What our clients say about working with Almanāb Technologies"
             showCta={false}
           />
         </div>

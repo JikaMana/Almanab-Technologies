@@ -17,7 +17,7 @@ export function BlogPostHeader() {
   return (
     <section className="flex-center px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
-        <div className="mx-auto mb-8 flex w-full max-w-[768px] flex-col items-start justify-start md:mb-16 lg:mb-20">
+        <div className="mx-auto mb-8 flex w-full max-w-[768px] flex-col items-start justify-start text-white md:mb-16 lg:mb-20">
           <Breadcrumb className="mb-6 flex w-full items-center">
             <BreadcrumbList className="text-base text-black">
               <BreadcrumbItem>
@@ -40,7 +40,7 @@ export function BlogPostHeader() {
                 <img
                   loading="lazy"
                   src="https://res.cloudinary.com/deid1vy94/image/upload/v1759421539/codefloxx-project-case-study-case_dvdp1a.webp"
-                  alt="Codefloxx Project Study case"
+                  alt="Almanāb TechnologiesProject Study case"
                   className="size-14 min-h-14 min-w-14 rounded-full object-cover"
                 />
               </div>

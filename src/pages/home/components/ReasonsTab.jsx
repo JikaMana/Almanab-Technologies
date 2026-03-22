@@ -140,7 +140,7 @@ export const ReasonsTabContent = () => {
             </div>
 
             {/* Right - stats */}
-            <div className="divide-border flex flex-col divide-y">
+            <div className="divide-border flex flex-col justify-between divide-y">
               {tab.stats.map((stat, i) => (
                 <div
                   key={i}

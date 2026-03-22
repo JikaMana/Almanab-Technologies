@@ -11,7 +11,7 @@ import Services from "./components/Services";
 export default function Page() {
   return (
     <div>
-      <ServiceHeader />
+      {/* <ServiceHeader /> */}
       <Services />
       <WebsiteLayout />
       <MobileLayout />

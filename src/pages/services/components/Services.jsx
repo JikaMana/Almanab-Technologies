@@ -82,7 +82,7 @@ export function Services() {
   const data = serviceTabsData || [];
 
   return (
-    <section className="flex-center bg-brand-main px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="flex-center bg-brand-secondary px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container">
         <div className="flex flex-col items-center">
           <div className="mb-12 text-center md:mb-18 lg:mb-20">
@@ -91,7 +91,7 @@ export function Services() {
               title="Our digital engineering expertise"
               description="Comprehensive software solutions built with precision and purpose"
               showCta={false}
-              className="text-gray-900"
+              className="text-brand-main"
             />
           </div>
 

@@ -8,7 +8,7 @@ import { FAQs } from "./components/FAQs";
 export default function Page() {
   return (
     <div>
-      <ContactHeader />
+      {/* <ContactHeader /> */}
       <Contact />
       <PricingBreakdown />
       {/* <PricingPackages /> */}

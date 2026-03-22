@@ -30,28 +30,28 @@ const Circle = () => {
 
 const milestones = [
   {
-    year: "2021",
+    year: "2025",
     title: "Humble beginnings",
-    desc: "Founded CodeFloxx with a focus on helping local businesses transition online.",
+    desc: "Founded Almanāb Technologies with a focus on helping local businesses transition online.",
     primaryBtn: "Read",
     secondaryBtn: "Story",
   },
   {
-    year: "2022",
+    year: "2025",
     title: "First major client",
     desc: "Secured our first enterprise project, marking the start of steady growth.",
     primaryBtn: "View",
     secondaryBtn: "Case Study",
   },
   {
-    year: "2023",
+    year: "2025",
     title: "Expanding expertise",
     desc: "Added mobile app development and UI/UX design to our service offerings.",
     primaryBtn: "Discover",
     secondaryBtn: "Services",
   },
   {
-    year: "2024",
+    year: "2026",
     title: "Industry recognition",
     desc: "Recognized as a rising tech agency for our innovative approach and client results.",
     primaryBtn: "Learn",

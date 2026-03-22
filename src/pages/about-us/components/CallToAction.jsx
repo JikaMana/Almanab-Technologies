@@ -38,7 +38,7 @@ export function CallToAction() {
             <Button
               title="Consult"
               size="lg"
-              className="hover:text-brand-main hover:bg-brand-secondary h-auto w-max cursor-pointer rounded-full bg-teal-600 px-5 py-2.5 text-lg font-medium"
+              className="hover:text-brand-main hover:bg-brand-secondary bg-brand-secondary h-auto w-max cursor-pointer rounded-full px-5 py-2.5 text-lg font-medium"
             >
               Book Consultation
             </Button>
@@ -47,7 +47,7 @@ export function CallToAction() {
               title="Quote"
               size="lg"
               variant="outline"
-              className="h-auto w-max cursor-pointer rounded-full border-2 border-teal-600 bg-transparent px-5 py-2.5 text-lg font-medium text-teal-600 shadow-none transition-colors hover:bg-teal-600 hover:text-white"
+              className="border-brand-secondary text-brand-secondary hover:bg-brand-secondary h-auto w-max cursor-pointer rounded-full border-2 bg-transparent px-5 py-2.5 text-lg font-medium shadow-none transition-colors hover:text-white"
             >
               Get Quote
             </Button>
