@@ -39,7 +39,7 @@ export function ProjectCard({ project }) {
         </h3>
         <p className="text-muted-foreground">{project.description}</p>
 
-        <div className="mt-3 mb-6 flex flex-wrap gap-2 md:mt-4">
+        <div className="mt-3 mb-6 flex flex-wrap gap-x-2 gap-y-3 md:mt-4">
           {project.tags.map((tag, index) => (
             <Badge
               key={index}
@@ -70,7 +70,7 @@ export function ProjectCard({ project }) {
 
 export function ProjectGrid() {
   return (
-    <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 md:gap-y-16 lg:grid-cols-3">
+    <div className="md:grdid-cols-2 grid grid-cols-2 gap-x-8 gap-y-12 md:gap-y-16 lg:grid-cols-3">
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}
