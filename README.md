@@ -59,7 +59,7 @@ almanab-tech/
 
 | Token          | Value     | Usage                      |
 | -------------- | --------- | -------------------------- |
-| `--gold`       | `#d3af30` | Primary accent, CTAs, logo |
+| `--gold`       | `#bf9b30` | Primary accent, CTAs, logo |
 | `--dark`       | `#222222` | Brand dark / foreground    |
 | `--white`      | `#ffffff` | Light surfaces             |
 | `--light-gray` | `#f9f9f9` | Subtle backgrounds         |

@@ -41,7 +41,7 @@ const TICKER_ITEMS = [
 const Ticker = () => {
   const items = [...TICKER_ITEMS, ...TICKER_ITEMS];
   return (
-    <div className="relative w-full overflow-hidden border-y border-[#d3af30]/20 py-3">
+    <div className="relative w-full overflow-hidden border-y border-[#bf9b30]/20 py-3">
       {/* fade edges */}
       <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-[#222222] to-transparent" />
       <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-[#222222] to-transparent" />
@@ -52,7 +52,7 @@ const Ticker = () => {
             key={i}
             className="flex items-center gap-3 text-[11px] font-semibold tracking-[0.25em] text-white/30 uppercase"
           >
-            <span className="inline-block h-1 w-1 rounded-full bg-[#d3af30]/60" />
+            <span className="inline-block h-1 w-1 rounded-full bg-[#bf9b30]/60" />
             {item}
           </span>
         ))}
@@ -69,9 +69,9 @@ const Metric = ({ value, label, delay }) => (
     custom={delay}
     initial="hidden"
     animate="show"
-    className="flex flex-col gap-1 border-l border-[#d3af30]/25 pl-5"
+    className="flex flex-col gap-1 border-l border-[#bf9b30]/25 pl-5"
   >
-    <span className="font-display text-3xl leading-none font-bold tracking-tight text-[#d3af30]">
+    <span className="font-display text-3xl leading-none font-bold tracking-tight text-[#bf9b30]">
       {value}
     </span>
     <span className="text-[11px] font-medium tracking-[0.15em] text-white/40 uppercase">
@@ -84,7 +84,7 @@ const Metric = ({ value, label, delay }) => (
 
 const HeroSection = () => {
   return (
-    <section className="relative flex min-h-screen w-full flex-col overflow-hidden bg-[#222222] selection:bg-[#d3af30] selection:text-[#222222]">
+    <section className="relative flex min-h-screen w-full flex-col overflow-hidden bg-[#222222] selection:bg-[#bf9b30] selection:text-[#222222]">
       {/* ── Geometric Grid Texture ── */}
       <div
         className="pointer-events-none absolute inset-0 z-0 opacity-[0.04]"
@@ -98,10 +98,10 @@ const HeroSection = () => {
       />
 
       {/* ── Gold Radial Atmosphere ── */}
-      <div className="pointer-events-none absolute top-[-20%] right-[-10%] z-0 h-[700px] w-[700px] rounded-full bg-[#d3af30] opacity-[0.05] blur-[160px]" />
+      <div className="pointer-events-none absolute top-[-20%] right-[-10%] z-0 h-[700px] w-[700px] rounded-full bg-[#bf9b30] opacity-[0.05] blur-[160px]" />
 
       {/* ── Diagonal Accent Line ── */}
-      <div className="pointer-events-none absolute top-0 right-[18%] z-0 h-full w-[1px] origin-top rotate-[12deg] bg-gradient-to-b from-[#d3af30]/20 via-[#d3af30]/5 to-transparent" />
+      <div className="pointer-events-none absolute top-0 right-[18%] z-0 h-full w-[1px] origin-top rotate-[12deg] bg-gradient-to-b from-[#bf9b30]/20 via-[#bf9b30]/5 to-transparent" />
 
       {/* ── Main Content ── */}
       <div className="relative z-10 flex flex-1 flex-col justify-center px-6 pt-16 pb-8 md:px-12 lg:px-16 lg:pt-20">
@@ -113,7 +113,7 @@ const HeroSection = () => {
           animate="show"
           className="mb-8 flex items-center gap-4"
         >
-          <span className="text-[11px] font-bold tracking-[0.35em] text-[#d3af30] uppercase">
+          <span className="text-[11px] font-bold tracking-[0.35em] text-[#bf9b30] uppercase">
             Software Development Studio
           </span>
         </motion.div>
@@ -136,7 +136,7 @@ const HeroSection = () => {
             animate="show"
             className="text-[clamp(3.2rem,9vw,8.5rem)] leading-[0.88] font-black tracking-[-0.03em]"
             style={{
-              WebkitTextStroke: "1.5px #d3af30",
+              WebkitTextStroke: "1.5px #bf9b30",
               color: "transparent",
             }}
           >
@@ -163,14 +163,14 @@ const HeroSection = () => {
             <div className="flex flex-wrap items-center gap-4">
               <a
                 href="/contact"
-                className="group flex items-center gap-3 rounded-none bg-[#d3af30] px-7 py-4 text-[13px] font-black tracking-[0.15em] text-[#222222] uppercase transition-all hover:bg-white"
+                className="group flex items-center gap-3 rounded-none bg-[#bf9b30] px-7 py-4 text-[13px] font-black tracking-[0.15em] text-[#222222] uppercase transition-all hover:bg-white"
               >
                 Start a Project
                 <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
               <a
                 href="#portfolio"
-                className="flex items-center gap-2 border-b border-white/20 pb-0.5 text-[13px] font-semibold tracking-[0.15em] text-white/50 uppercase transition-colors hover:border-[#d3af30] hover:text-[#d3af30]"
+                className="flex items-center gap-2 border-b border-white/20 pb-0.5 text-[13px] font-semibold tracking-[0.15em] text-white/50 uppercase transition-colors hover:border-[#bf9b30] hover:text-[#bf9b30]"
               >
                 View Our Work
               </a>

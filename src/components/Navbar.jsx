@@ -60,7 +60,7 @@ const useFunctionalities = () => {
 
 const linkClass =
   "relative font-mono text-[10px] font-bold tracking-[0.18em] text-white/40 uppercase transition-colors hover:text-white " +
-  "after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#d3af30] after:transition-all hover:after:w-full";
+  "after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#bf9b30] after:transition-all hover:after:w-full";
 
 // Navbar─
 
@@ -70,7 +70,7 @@ export function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-[999] w-screen overflow-x-hidden">
       {/* thin gold top bar */}
-      <div className="h-[2px] w-full bg-[#d3af30]" />
+      <div className="h-[2px] w-full bg-[#bf9b30]" />
 
       {/* main bar */}
       <nav
@@ -138,7 +138,7 @@ export function Navbar() {
                   >
                     <Link
                       to="/about-us"
-                      className="hover:text-gold block px-5 py-3 font-mono text-[10px] tracking-[0.14em] text-white/40 uppercase transition-colors hover:bg-[#d3af30]/10"
+                      className="hover:text-gold block px-5 py-3 font-mono text-[10px] tracking-[0.14em] text-white/40 uppercase transition-colors hover:bg-[#bf9b30]/10"
                     >
                       About Us
                     </Link>
@@ -153,7 +153,7 @@ export function Navbar() {
         <div className="hidden lg:flex">
           <Link
             to="/contact"
-            className="group inline-flex items-center gap-2 bg-[#d3af30] px-6 py-3 font-mono text-[10px] font-bold tracking-[0.18em] text-[#181818] uppercase transition-all hover:bg-[#e8c84a]"
+            className="group inline-flex items-center gap-2 bg-[#bf9b30] px-6 py-3 font-mono text-[10px] font-bold tracking-[0.18em] text-[#181818] uppercase transition-all hover:bg-[#e8c84a]"
           >
             Contact &amp; Quote
             <span className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
@@ -264,7 +264,7 @@ export function Navbar() {
                       <Link
                         to="/about-us"
                         onClick={ua.toggleMobileMenu}
-                        className="block py-3 pl-4 font-mono text-[10px] tracking-[0.14em] text-[#d3af30]/60 uppercase transition-colors hover:text-[#d3af30]"
+                        className="block py-3 pl-4 font-mono text-[10px] tracking-[0.14em] text-[#bf9b30]/60 uppercase transition-colors hover:text-[#bf9b30]"
                       >
                         — About Us
                       </Link>
@@ -277,7 +277,7 @@ export function Navbar() {
               <Link
                 to="/contact"
                 onClick={ua.toggleMobileMenu}
-                className="mt-6 flex items-center justify-center gap-2 bg-[#d3af30] py-4 font-mono text-[11px] font-bold tracking-[0.2em] text-[#181818] uppercase transition-colors hover:bg-[#e8c84a]"
+                className="mt-6 flex items-center justify-center gap-2 bg-[#bf9b30] py-4 font-mono text-[11px] font-bold tracking-[0.2em] text-[#181818] uppercase transition-colors hover:bg-[#e8c84a]"
               >
                 Contact &amp; Quote ↗
               </Link>

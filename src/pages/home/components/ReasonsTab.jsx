@@ -114,7 +114,7 @@ export const ReasonsTabContent = () => {
               <p className="text-border mb-5 text-6xl italic lg:text-7xl">
                 {tab.number}
               </p>
-              <h3 className="text-foreground mb-4 text-2xl leading-snug font-normal lg:text-3xl">
+              <h3 className="text-foreground mb-4 text-2xl leading-snug font-semibold lg:text-3xl">
                 {tab.title}
               </h3>
               <p className="text-muted-foreground mb-8 text-[15px] leading-relaxed font-light">
@@ -123,7 +123,7 @@ export const ReasonsTabContent = () => {
               <a href={tab.url}>
                 <Button
                   variant="link"
-                  className="text-foreground flex w-fit cursor-pointer items-center gap-0 px-0 text-sm font-medium underline-offset-4 hover:gap-1"
+                  className="text-foreground flex w-fit cursor-pointer items-center gap-0 px-0 text-base font-semibold underline-offset-4 hover:gap-1"
                 >
                   {tab.cta}
                   <svg
@@ -146,7 +146,7 @@ export const ReasonsTabContent = () => {
                   key={i}
                   className="first:border-border py-5 first:border-t"
                 >
-                  <p className="text-foreground mb-1 text-3xl font-normal">
+                  <p className="text-foreground mb-1 text-3xl font-semibold">
                     {stat.value}
                   </p>
                   <p className="text-muted-foreground text-[13px] leading-relaxed font-light">

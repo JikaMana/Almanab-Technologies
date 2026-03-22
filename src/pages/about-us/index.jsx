@@ -1,7 +1,7 @@
 import React from "react";
 import { AboutUsHeader } from "./components/AboutUsHeader";
 import { AboutUsStorySection } from "./components/AboutUsStorySection";
-import { CodefloxxTeam } from "./components/CodefloxxTeam";
+import { AMBTechTeam } from "./components/AMBTechTeam";
 import { OurTimeline } from "./components/OurTimeline";
 import { Testimonials } from "./components/Testimonials";
 import { AwardAndIndustryRecogition } from "./components/AwardAndIndustryRecogition";
@@ -13,7 +13,7 @@ export default function AboutUs() {
     <div>
       <AboutUsHeader />
       <AboutUsStorySection />
-      <CodefloxxTeam />
+      <AMBTechTeam />
       <OurTimeline />
       <Testimonials />
       <AwardAndIndustryRecogition />

@@ -5,7 +5,7 @@ import React from "react";
 import { BiLogoDribbble, BiLogoLinkedinSquare } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
 
-export function CodefloxxTeam() {
+export function AMBTechTeam() {
   const teamMembers = [
     {
       name: "Yahaya Abdullahi",

@@ -27,7 +27,7 @@ export function Contact() {
 
   return (
     <section
-      id="Consult"
+      id="consult"
       className="flex-center bg-gray-50 px-[5%] py-16 md:py-24 lg:py-28"
     >
       <div className="container grid grid-cols-1 items-start gap-y-12 md:grid-cols-2 md:gap-x-16 lg:gap-x-24">

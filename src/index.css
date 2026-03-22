@@ -60,7 +60,7 @@
   --radius: 0.625rem;
 
   /* --- RAW BRAND TOKENS --- */
-  --gold: #d3af30;
+  --gold: #bf9b30;
   --dark: #222222;
   --gold-light: #fdf6dc; /* gold washed — surfaces, hovers */
   --gold-deep: #b8941a; /* gold darkened — active, borders */
@@ -96,10 +96,10 @@
 
   --border: #e6e6e6;
   --input: #e6e6e6;
-  --ring: #d3af30;
+  --ring: #bf9b30;
 
   /* Charts — gold-to-ash scale only, no outside colors */
-  --chart-1: #d3af30;
+  --chart-1: #bf9b30;
   --chart-2: #b8941a;
   --chart-3: #4a4a4a;
   --chart-4: #6b6b6b;
@@ -113,10 +113,10 @@
   --sidebar-accent: #fdf6dc;
   --sidebar-accent-foreground: #222222;
   --sidebar-border: #e6e6e6;
-  --sidebar-ring: #d3af30;
+  --sidebar-ring: #bf9b30;
 
   /* --- BRAND ALIASES (used by brand-* Tailwind classes in components) --- */
-  --brand-main: #d3af30;
+  --brand-main: #bf9b30;
   --brand-secondary: #222222;
   --brand-shade-light: #fdf6dc;
   --brand-shade-dark: #b8941a;
@@ -124,7 +124,7 @@
 
 .dark {
   /* --- RAW BRAND TOKENS --- */
-  --gold: #d3af30;
+  --gold: #bf9b30;
   --gold-light: #fdf6dc;
   --gold-deep: #e8c84a;
   --dark: #222222;
@@ -141,7 +141,7 @@
   --popover: #2a2a2a;
   --popover-foreground: #f9f9f9;
 
-  --primary: #d3af30; /* gold leads in dark mode */
+  --primary: #bf9b30; /* gold leads in dark mode */
   --primary-foreground: #222222;
 
   --secondary: #333333;
@@ -151,16 +151,16 @@
   --muted-foreground: #a0a0a0;
 
   --accent: #3a3217; /* dark gold-tinted surface */
-  --accent-foreground: #d3af30;
+  --accent-foreground: #bf9b30;
 
   --destructive: #c0392b;
 
   --border: rgba(255, 255, 255, 0.1);
   --input: rgba(255, 255, 255, 0.12);
-  --ring: #d3af30;
+  --ring: #bf9b30;
 
   /* Charts */
-  --chart-1: #d3af30;
+  --chart-1: #bf9b30;
   --chart-2: #e8c84a;
   --chart-3: #f9f9f9;
   --chart-4: #a0a0a0;
@@ -169,15 +169,15 @@
   /* Sidebar */
   --sidebar: #2a2a2a;
   --sidebar-foreground: #f9f9f9;
-  --sidebar-primary: #d3af30;
+  --sidebar-primary: #bf9b30;
   --sidebar-primary-foreground: #222222;
   --sidebar-accent: #3a3217;
-  --sidebar-accent-foreground: #d3af30;
+  --sidebar-accent-foreground: #bf9b30;
   --sidebar-border: rgba(255, 255, 255, 0.1);
-  --sidebar-ring: #d3af30;
+  --sidebar-ring: #bf9b30;
 
   /* --- BRAND ALIASES --- */
-  --brand-main: #d3af30;
+  --brand-main: #bf9b30;
   --brand-secondary: #222222;
   --brand-shade-light: #3a3217;
   --brand-shade-dark: #e8c84a;

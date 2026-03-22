@@ -94,14 +94,14 @@ export function FAQs() {
           <p className="text-lg text-gray-600">
             We are happy to discuss your specific requirements
           </p>
-          <div className="mt-6">
+          <a href="#consult" className="mt-6">
             <Button
               title="Contact Us"
               className="bg-brand-main hover:bg-brand-main/90 mx-auto h-12 w-full cursor-pointer rounded-xl px-8 font-bold text-white"
             >
               Contact Us
             </Button>
-          </div>
+          </a>
         </div>
       </div>
     </section>
