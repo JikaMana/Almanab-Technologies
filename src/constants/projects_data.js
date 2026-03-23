@@ -4,7 +4,7 @@ export const projects = [
     title: "Recyclo Mobile App",
     description:
       "Cross-platform React Native app for recycling and waste management.",
-    tags: ["Mobile", "React Native", "Expo"],
+    tags: ["Mobile", "Expo", "React Native"],
     image:
       "https://res.cloudinary.com/deid1vy94/image/upload/v1761034254/codefloxx-recyclo-app_jdkpc3.png",
     link: "#",
@@ -14,7 +14,7 @@ export const projects = [
     title: "Bilma Scent – E-commerce Perfume Store",
     description:
       "Full-featured online perfume shop with product catalog, cart, and payment integration.",
-    tags: ["Web", "Ecommerce", "Retail"],
+    tags: ["Web", "Retail", "Ecommerce"],
     image:
       "https://res.cloudinary.com/deid1vy94/image/upload/v1759155422/codefloxx-bilma-scents-project_zyu5cj.webp",
     link: "https://bilma-scents.vercel.app/",
@@ -35,7 +35,7 @@ export const projects = [
     title: "Triple R Recycling Website",
     description:
       "Corporate website for a social enterprise in Abuja focusing on PET bottle collection and community empowerment.",
-    tags: ["Web", "CSR", "Recycling", "Waste Disposal"],
+    tags: ["Web", "Recycling", "Waste Disposal"],
     image:
       "https://res.cloudinary.com/deid1vy94/image/upload/v1759155415/codefloxx-tripleR-project_qjpmil.webp",
     link: "https://triplerrecyclingltd.com/",
@@ -54,7 +54,7 @@ export const projects = [
     title: "Online Tutor Portfolio Website",
     description:
       "Modern portfolio website to showcase mathematics knowledge and technical skills of an Instructor",
-    tags: ["Web", "Learning", "Academics", "Mathematics"],
+    tags: ["Web", "Learning", "Academics"],
     image: "/assets/home/codefloxx-maths-tutor.png",
     link: "#",
   },

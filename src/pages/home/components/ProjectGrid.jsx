@@ -32,18 +32,20 @@ export function ProjectCard({ project }) {
         <h3 className="mb-2 font-bold">
           <a
             href={project.link}
-            className="hover:text-primary transition duration-150"
+            className="hover:text-primary text-sm transition duration-150 sm:text-base"
           >
             {project.title}
           </a>
         </h3>
-        <p className="text-muted-foreground">{project.description}</p>
+        <p className="text-muted-foreground text-xs sm:text-base">
+          {project.description}
+        </p>
 
         <div className="mt-3 mb-6 flex flex-wrap gap-x-2 gap-y-3 md:mt-4">
           {project.tags.map((tag, index) => (
             <Badge
               key={index}
-              className="rounded-full bg-transparent px-3 py-1 text-base font-medium text-gray-700 shadow-none outline-2 outline-gray-600 hover:bg-gray-200"
+              className="rounded-full bg-transparent px-2 py-0.5 text-xs font-medium text-gray-700 shadow-none outline-2 outline-gray-600 hover:bg-gray-200 sm:px-3 sm:py-1 sm:text-sm"
             >
               {tag}
             </Badge>
@@ -70,7 +72,7 @@ export function ProjectCard({ project }) {
 
 export function ProjectGrid() {
   return (
-    <div className="md:grdid-cols-2 grid grid-cols-2 gap-x-8 gap-y-12 md:gap-y-16 lg:grid-cols-3">
+    <div className="grid grid-cols-2 gap-x-2 gap-y-12 sm:gap-x-4 md:gap-x-6 md:gap-y-16 lg:grid-cols-3 lg:gap-x-8">
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}
